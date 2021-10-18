@@ -10,9 +10,18 @@ set noerrorbells
 set incsearch
 set scrolloff=8
 set signcolumn=yes:1
-set clipboard+=unnamedplus
+set clipboard=unnamedplus
 set relativenumber
 set mouse=a
+set nowrap
+syntax enable
+set smarttab
+set autoindent
+" Better tabbing
+vnoremap < <gv
+vnoremap > >gv
+inoremap jk <Esc>
+inoremap kj <Esc>
 filetype plugin indent on
 let mapleader=" "
 set makeprg=gcc\ %\ -o\ %<\ -lm
@@ -71,7 +80,7 @@ let g:airline_solarized_bg='dark'
 let g:rnvimr_ex_enable = 1
 nmap <space>r :RnvimrToggle<CR>
 
-
+au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 
 
