@@ -1,2 +1,4 @@
 nvim/.config/nvim/after/
 nvim/.config/nvim/autoload/
+zsh/.config/zsh/plugins/
+zsh/.config/zsh/.zcompdump
