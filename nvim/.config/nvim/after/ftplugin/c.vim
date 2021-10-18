@@ -1,1 +1,0 @@
-echo "C config loaded"

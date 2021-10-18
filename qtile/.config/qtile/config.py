@@ -20,7 +20,11 @@ keys = [
              desc='Launches My Terminal'
              ),
          Key(["control", "shift"], "r",
-             lazy.spawn("rofi -show run -theme nord -icon-theme 'Papirus' -show-icons -terminal miro"),
+             lazy.spawn("rofi -show run -theme nord -icon-theme 'Papirus' -show-icons -terminal kitty"),
+             desc='Run Launcher'
+             ),
+         Key(["mod1"], "Tab",
+             lazy.spawn("rofi -show window  -theme nord -icon-theme 'Papirus' -show-icons -terminal kitty"),
              desc='Run Launcher'
              ),
         Key([mod], "r",
@@ -164,29 +168,29 @@ layouts = [
     #layout.Matrix(**layout_theme),
     #layout.Zoomy(**layout_theme),
     layout.MonadTall(**layout_theme),
-    layout.Max(**layout_theme),
-    layout.Stack(num_stacks=2),
-    layout.RatioTile(**layout_theme),
-    layout.TreeTab(
-         font = "Ubuntu",
-         fontsize = 10,
-         sections = ["FIRST", "SECOND", "THIRD", "FOURTH"],
-         section_fontsize = 10,
-         border_width = 2,
-         bg_color = "1c1f24",
-         active_bg = "c678dd",
-         active_fg = "000000",
-         inactive_bg = "a9a1e1",
-         inactive_fg = "1c1f24",
-         padding_left = 0,
-         padding_x = 0,
-         padding_y = 5,
-         section_top = 10,
-         section_bottom = 20,
-         level_shift = 8,
-         vspace = 3,
-         panel_width = 200
-         ),
+    #layout.Max(**layout_theme),
+    #layout.Stack(num_stacks=2),
+    #layout.RatioTile(**layout_theme),
+    ##layout.TreeTab(
+    #     font = "Ubuntu",
+    #     fontsize = 10,
+    #     sections = ["FIRST", "SECOND", "THIRD", "FOURTH"],
+    #     section_fontsize = 10,
+    #     border_width = 2,
+    #     bg_color = "1c1f24",
+    #     active_bg = "c678dd",
+    #     active_fg = "000000",
+    #     inactive_bg = "a9a1e1",
+    #     inactive_fg = "1c1f24",
+    #     padding_left = 0,
+    #     padding_x = 0,
+    #     padding_y = 5,
+    #     section_top = 10,
+    #     section_bottom = 20,
+    #     level_shift = 8,
+    #     vspace = 3,
+    #     panel_width = 200
+      #   ),
     layout.Floating(**layout_theme)
 ]
 
@@ -199,7 +203,9 @@ colors = [["#3B4252", "#3B4252"], # panel background
           ["#EBCB8B", "#EBCB8B"], # window name
           ["#8FBCBB", "#8FBCBB"],
           ["#D08770", "#D08770"],
-          ["#CC9966", "#CC9966"]] # backbround for inactive screens
+          ["#CC9966", "#CC9966"],
+          ["#88c0d0", "#88c0d0"],
+          ["#81a1c1", "#81a1c1"]] # backbround for inactive screens
 
 ##### DEFAULT WIDGET SETTINGS #####
 widget_defaults = dict(
@@ -220,7 +226,13 @@ screens = [
                     background = colors[1],
                     foreground = colors[2],
                     inactive = colors[2],
-                    active = colors[5]),
+                    active = colors[10],
+                    borderwidth = 2,
+                    this_current_screen_border = colors[2],
+                    this_screen_border = colors[2],
+                    other_screen_border = colors[10],
+                    other_current_screen_border = colors[10],
+                ),
                 widget.TaskList(
                     max_title_width = 70
                 ),
@@ -283,7 +295,12 @@ screens = [
                     background = colors[1],
                     foreground = colors[2],
                     inactive = colors[2],
-                    active = colors[5],
+                    active = colors[10],
+                    borderwidth = 2,
+                    this_current_screen_border = colors[2],
+                    this_screen_border = colors[2],
+                    other_screen_border = colors[10],
+                    other_current_screen_border = colors[10],
                 ),
                 widget.WindowName(),
                 widget.Chord(
