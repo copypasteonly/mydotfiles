@@ -1,0 +1,5 @@
+require('colorizer-config')
+require('lua-lang')
+require('py-lang')
+require('c-lang')
+require('treesitter')
