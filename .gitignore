@@ -1,4 +1,4 @@
-nvim/.config/nvim/after/
 nvim/.config/nvim/autoload/
+nvim/.config/nvim/lua-language-server/
 zsh/.config/zsh/plugins/
 zsh/.config/zsh/.zcompdump

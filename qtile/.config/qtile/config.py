@@ -233,14 +233,7 @@ screens = [
                     other_screen_border = colors[10],
                     other_current_screen_border = colors[10],
                 ),
-                widget.TaskList(
-                    max_title_width = 70
-                ),
-                widget.Chord(
-                    chords_colors={
-                        'launch': ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
+                widget.Spacer(
                 ),
                 widget.Net(
                     interface="enp34s0",
@@ -264,7 +257,7 @@ screens = [
                 ),
                 widget.TextBox("🖥️ ", background = colors[5]),
                 widget.ThermalSensor(
-                    tag_sensor = "Tdie",
+                    tag_sensor = "Tctl",
                     background = colors[5]
                 ),
                 widget.Spacer(
@@ -302,13 +295,7 @@ screens = [
                     other_screen_border = colors[10],
                     other_current_screen_border = colors[10],
                 ),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        'launch': ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
+                widget.Spacer(),
                 widget.CryptoTicker(
                     crypto = 'BTC'
                 ),
@@ -321,7 +308,7 @@ screens = [
                 widget.OpenWeather(
                     cityid = "1721080",
                     update_interval = 300,
-                    format = '{location_city}: {main_temp}°{units_temperature} {humidity}%'
+                    format = '{location_city}: {temp}°{units_temperature} {humidity}%'
                 ),
             ],
             24,

@@ -5,9 +5,6 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 syntax enable
 filetype plugin indent on
 let mapleader=" "
-set makeprg=gcc\ %\ -o\ %<\ -lm
-nnoremap <F11> :w<cr>:make<cr>
-nnoremap <F12> :te./%<<cr>
 autocmd FileType apache setlocal commentstring=#\ %s
 
 set tabstop=4 softtabstop=4
