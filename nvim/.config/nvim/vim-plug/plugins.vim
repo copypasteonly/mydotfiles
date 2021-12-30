@@ -15,9 +15,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Auto pairs for '(' '[' '{'
     Plug 'jiangmiao/auto-pairs'
     Plug 'andweeb/presence.nvim'
-    Plug 'Pocco81/Catppuccino.nvim'
-    Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/plenary.nvim'
+    Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     " main one
@@ -29,9 +28,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'kyazdani42/nvim-web-devicons' " lua
     Plug 'ryanoasis/vim-devicons' " vimscript
     "Status bar
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+    Plug 'nvim-lualine/lualine.nvim'
     Plug 'junegunn/rainbow_parentheses.vim'
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'tpope/vim-commentary'
+    Plug 'catppuccin/nvim'
 call plug#end()

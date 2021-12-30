@@ -1,5 +1,8 @@
 require('colorizer-config')
+require('rust-lang')
 require('lua-lang')
 require('py-lang')
 require('c-lang')
 require('treesitter')
+require('lua-line')
+require('keymaps')
