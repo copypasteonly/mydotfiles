@@ -23,8 +23,11 @@ set mouse=a
 set smarttab
 set autoindent
 set showtabline=2
-
-colorscheme catppuccin
+set updatetime=200
+let g:gruvbox_transparent_bg=1
+colorscheme gruvbox
+set background=dark
+highlight Normal guibg=NONE ctermbg=None
 nnoremap Y y$
 let g:coq_settings = { 'auto_start': 'shut-up' }
 
@@ -32,9 +35,9 @@ let g:coq_settings = { 'auto_start': 'shut-up' }
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr
 
 nnoremap <leader>r <cmd>CHADopen<cr>
-let g:chadtree_settings = { "theme.text_colour_set" : "solarized_dark" }
+let g:chadtree_settings = { "theme.text_colour_set" : "solarized_universal" }
 
 let g:coq_settings = { 'keymap.jump_to_mark': '<c-m>' }

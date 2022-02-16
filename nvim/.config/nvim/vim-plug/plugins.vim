@@ -33,4 +33,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'tpope/vim-commentary'
     Plug 'catppuccin/nvim'
+    Plug 'morhetz/gruvbox'
+    Plug 'andweeb/presence.nvim'
 call plug#end()
