@@ -95,7 +95,10 @@ export PATH="$HOME/bin:$PATH"
 # For QT Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 19c862e (Change on C make)
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme

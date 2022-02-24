@@ -1,4 +1,4 @@
 echo "C config loaded"
-set makeprg=gcc\ %\ -o\ %<\ -lm
-nnoremap <F11> :w<cr>:make<cr>
+set makeprg=gcc\ -o\ %<\ -lm
+nnoremap <F11> :w<cr>
 nnoremap <F12> :te./%<<cr>
