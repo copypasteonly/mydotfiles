@@ -29,7 +29,7 @@ colorscheme gruvbox
 set background=dark
 highlight Normal guibg=NONE ctermbg=None
 nnoremap Y y$
-let g:coq_settings = { 'auto_start': 'shut-up' }
+let g:coq_settings = { 'auto_start': 'shut-up', 'keymap.jump_to_mark' : '<c-m>'}
 
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
@@ -40,4 +40,4 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr
 nnoremap <leader>r <cmd>CHADopen<cr>
 let g:chadtree_settings = { "theme.text_colour_set" : "solarized_universal" }
 
-let g:coq_settings = { 'keymap.jump_to_mark': '<c-m>' }
+
