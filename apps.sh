@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pacman -S amd-ucode bluez bluez-utils conky dmenu dunst dialog grub efibootmgr feh firefox flameshot font-manager fzf jq kitty networkmanager network-manager-applet papirus-icon-theme pavucontrol picom pipewire pipewire-alsa pipewire-pulse pipewire-jack polybar qt5ct redshift rofi rofimoji stow ttf-fire-code ttf-jetbrains-mono wpa_supplicant xclip xdg-user-dirs xdg-utils xorg-server zsh xorg-xrandr xorg-xgamma zip unrar unzip unarchiver virt-manager qemu-desktop libvirt edk2-ovmf dnsmasq iptables-nft libreoffice-still ntfs-3g firewalld os-prober openssh thunar lxappearance-gtk3 rust-analyzer rustup reflector base-devel linux-headers
