@@ -35,4 +35,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'catppuccin/nvim'
     Plug 'morhetz/gruvbox'
     Plug 'andweeb/presence.nvim'
+    Plug 'mfussenegger/nvim-jdtls'
 call plug#end()

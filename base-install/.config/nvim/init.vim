@@ -26,7 +26,7 @@ set showtabline=2
 set updatetime=200
 highlight Normal guibg=NONE ctermbg=None
 nnoremap Y y$
-let g:coq_settings = { 'auto_start': 'shut-up', 'keymap.jump_to_mark' : '<c-m>'}
+let g:coq_settings = { 'auto_start': 'shut-up', 'keymap.jump_to_mark' : '<c-_>'}
 
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
@@ -42,3 +42,4 @@ set background=dark
 let g:vscode_transparency = 1
 let g:vscode_italic_comment = 1
 let g:vscode_disable_nvimtree_bg = v:true
+
