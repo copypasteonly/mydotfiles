@@ -14,7 +14,7 @@ focus_new_windows = true
 
 [[keybind]]
 command = "Execute"
-value = "kitty"
+value = "kitty -1"
 modifier = ["modkey", "Shift"]
 key = "Return"
 

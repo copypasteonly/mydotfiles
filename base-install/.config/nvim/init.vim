@@ -1,5 +1,5 @@
 set termguicolors
-source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/plugins.vim
 lua require 'init'
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 syntax enable
