@@ -32,8 +32,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'junegunn/rainbow_parentheses.vim'
     Plug 'norcalli/nvim-colorizer.lua'
     Plug 'tpope/vim-commentary'
-    Plug 'catppuccin/nvim'
     Plug 'shaunsingh/nord.nvim'
     Plug 'andweeb/presence.nvim'
     Plug 'Mofiqul/vscode.nvim'
+
 call plug#end()
