@@ -80,7 +80,6 @@ autoload edit-command-line; zle -N edit-command-line
 # bindkey '^e' edit-command-line
 
 # TODO Remove these
-setxkbmap -option caps:escape
 xset r rate 210 40
 
 # Speedy keys
@@ -95,13 +94,12 @@ export PATH="$HOME/bin:$PATH"
 # For QT Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 19c862e (Change on C make)
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+
+# To customize prompt, run `p10k configure` or edit ~/mydotfiles/zsh/.config/zsh/.p10k.zsh.
+[[ ! -f ~/mydotfiles/zsh/.config/zsh/.p10k.zsh ]] || source ~/mydotfiles/zsh/.config/zsh/.p10k.zsh
