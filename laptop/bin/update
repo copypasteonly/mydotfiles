@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+paru -Syyu
+echo "ALL APPS UPDATED"
+paru -S neovim-nightly-bin
+echo "NEOVIM UPDATED"
+nvim -c PlugUpdate -c PlugUpgrade
+echo "PLUGINS UPDATED"
+rustup update
+echo "RUST UPDATED"
