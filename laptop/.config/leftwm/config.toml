@@ -6,11 +6,24 @@ layouts = ["MainAndVertStack", "MainAndHorizontalStack", "MainAndDeck", "GridHor
 layout_mode = "Workspace"
 insert_behavior = "Bottom"
 scratchpad = []
-window_rules = []
+window_rules = [
+    # {window_class = "Steam", spawn_floating = true},
+]
 disable_current_tag_swap = false
 disable_tile_drag = false
 focus_behaviour = "Sloppy"
 focus_new_windows = true
+
+[[keybind]]
+command = "ToggleFloating"
+modifier = ["modkey", "Shift"]
+key = "f"
+
+[[keybind]]
+command = "Execute"
+value = "flameshot gui"
+modifier = []
+key = "Print"
 
 [[keybind]]
 command = "Execute"

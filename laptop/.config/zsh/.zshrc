@@ -7,6 +7,11 @@ fi
 
 #!/bin/sh
 
+source $HOME/.zshenv
+
+#FNM Node Manager!!
+eval "$(fnm env --use-on-cd)"
+
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 HISTFILE=~/.zsh_history
 setopt appendhistory
@@ -85,6 +90,3 @@ xset r rate 210 40
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
-
-# To customize prompt, run `p10k configure` or edit ~/mydotfiles/base-install/.config/zsh/.p10k.zsh.
-[[ ! -f ~/mydotfiles/base-install/.config/zsh/.p10k.zsh ]] || source ~/mydotfiles/base-install/.config/zsh/.p10k.zsh

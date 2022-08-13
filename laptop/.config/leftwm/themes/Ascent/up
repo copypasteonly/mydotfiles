@@ -63,9 +63,14 @@ elif [ -x "$(command -v picom)" ]; then
   picom &> /dev/null &
 fi
 
-#set background
+##set background
+#if [ -x "$(command -v feh)" ]; then
+#  feh --bg-fill "$SCRIPTPATH"/nord-wallpaper.jpg
+#fi
+
+
 if [ -x "$(command -v feh)" ]; then
-  feh --bg-fill "$SCRIPTPATH"/nord-wallpaper.jpg
+  feh --bg-fill --randomize ~/Wallpapers/
 fi
 
 #set the theme.toml config

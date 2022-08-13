@@ -1,5 +1,5 @@
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = "", -- "all", or specify.
+  ensure_installed = { "c", "lua", "rust", "bash", "cmake", "comment", "cpp", "css", "go", "html", "http", "java", "javascript", "json", "kotlin", "latex", "llvm", "make", "markdown", "ninja", "nix", "perl", "php", "python", "regex", "ruby", "scss", "toml", "swift", "typescript", "vim", "yaml"}, -- "all", or specify.
   sync_install = false,
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {
