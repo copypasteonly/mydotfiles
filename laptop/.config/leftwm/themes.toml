@@ -187,7 +187,7 @@ repository = "https://gitlab.com/mWalrus/ascent"
 commit = "*"
 version = "1.0.0"
 leftwm_versions = ">0.2.7"
-current = true
+current = false
 
 [[repos.themes]]
 name = "Zexanima"
@@ -200,6 +200,23 @@ current = false
 [[repos.themes]]
 name = "minimal-solarized"
 repository = "https://github.com/minda1975/minimal_solarized"
+commit = "*"
+version = "0.1.0"
+leftwm_versions = "^0.3.0"
+current = false
+
+[[repos.themes]]
+name = "arch-one-dark"
+directory = "/home/denzel/.config/leftwm/themes/arch-one-dark"
+repository = "https://github.com/jamesbaker1901/leftwm-arch-one-dark/"
+commit = "*"
+version = "1.0.0"
+leftwm_versions = "^0.3.0"
+current = true
+
+[[repos.themes]]
+name = "plan9"
+repository = "https://github.com/seabassapologist/leftwm-theme-plan9"
 commit = "*"
 version = "0.1.0"
 leftwm_versions = "^0.3.0"

@@ -15,6 +15,18 @@ focus_behaviour = "Sloppy"
 focus_new_windows = true
 
 [[keybind]]
+command = "IncreaseMainWidth"
+value = "2"
+modifier = ["modkey", "Shift"]
+key = "l"
+
+[[keybind]]
+command = "DecreaseMainWidth"
+value = "2"
+modifier = ["modkey", "Shift"]
+key = "h"
+
+[[keybind]]
 command = "ToggleFloating"
 modifier = ["modkey", "Shift"]
 key = "f"

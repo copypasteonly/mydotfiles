@@ -76,7 +76,7 @@ fi
 #set the theme.toml config
 leftwm-command "LoadTheme $SCRIPTPATH/theme.toml"
 
-##boot polybar based on the number of monitors found
+#boot polybar based on the number of monitors found
 if [ -x "$(command -v polybar)" ]; then
   pkill polybar
   monitors="$(polybar -m | sed s/:.*// | tac)"
@@ -86,8 +86,8 @@ if [ -x "$(command -v polybar)" ]; then
   exit 0
 fi
 
-#boot polybar based on the number of monitors found
+##boot polybar based on the number of monitors found
 #if [ -x "$(command -v polybar)" ]; then
-#    MONITOR="HDMI-A-1" polybar --reload -c "$SCRIPTPATH/config.ini" mainbar &
-#    MONITOR="HDMI-A-0" polybar --reload -c "$SCRIPTPATH/config.ini" portrait &
+#    MONITOR="DP-4" polybar --reload -c "$SCRIPTPATH/config.ini" mainbar &
+#    MONITOR="eDP-1" polybar --reload -c "$SCRIPTPATH/config.ini" portrait &
 #fi
