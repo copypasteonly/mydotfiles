@@ -9,7 +9,7 @@ from os.path import expanduser
 config = configparser.ConfigParser()
 
 # File must be opened with utf-8 explicitly
-with open(expanduser('~/.config/polybar/crypto-config'), 'r', encoding='utf-8') as f:
+with open(expanduser('~/bin/crypto-config'), 'r', encoding='utf-8') as f:
     config.read_file(f)
 
 # Everything except the general section
@@ -31,7 +31,7 @@ for currency in currencies:
         elif display_opt == 'percentage':
             sys.stdout.write(f'{icon} {change_24:+}%')
         elif display_opt == 'price':
-            sys.stdout.write(f'{icon} {local_price}')
+            sys.stdout.write(f'{icon} ${local_price}')
         if currency != currencies[-1]:
             sys.stdout.write('  ')
     except requests.exceptions.ConnectionError as e:
