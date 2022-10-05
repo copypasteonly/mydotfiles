@@ -1,3 +1,3 @@
 require'lualine'.setup{
-  options = { theme  = 'vscode' },
+  options = { theme  = 'gruvbox-material' },
 }
