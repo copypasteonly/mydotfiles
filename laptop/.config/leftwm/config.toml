@@ -75,7 +75,7 @@ key = "XF86XK_AudioLowerVolume"
 
 [[keybind]]
 command = "Execute"
-value = "rofi -modi drun -show drun -icon-theme Papirus -show-icons"
+value = "~/.config/rofi/launchers/type-5/launcher.sh"
 modifier = ["Control", "Shift"]
 key = "r"
 
