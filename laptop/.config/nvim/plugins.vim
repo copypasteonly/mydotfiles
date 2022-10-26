@@ -11,9 +11,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " File Explorer
     Plug 'scrooloose/NERDTree'
 
-    " Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
-
     " Discord presence
     Plug 'andweeb/presence.nvim'
 
@@ -43,8 +40,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'shaunsingh/nord.nvim'
     Plug 'Mofiqul/vscode.nvim'
     Plug 'sainnhe/gruvbox-material'
-    
-    "Easier Java
+    Plug 'sainnhe/everforest'
+
+    " Easier Java
     Plug 'mfussenegger/nvim-jdtls'
+
+    Plug 'windwp/nvim-autopairs'
 
 call plug#end()

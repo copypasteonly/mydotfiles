@@ -4,7 +4,10 @@ lua require 'init'
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 syntax enable
 filetype plugin indent on
+
 autocmd FileType apache setlocal commentstring=#\ %s
+autocmd BufRead,BufNewFile *.ron set syntax=rust
+autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 
 set cursorline
 set tabstop=4 softtabstop=4
@@ -38,15 +41,21 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>r <cmd>CHADopen<cr>
 let g:chadtree_settings = { "theme.text_colour_set" : "solarized_universal" }
 
+set background=dark
 " colorscheme vscode
-" set background=dark
 " let g:vscode_transparency = 1
 " let g:vscode_italic_comment = 1
 " let g:vscode_disable_nvimtree_bg = v:true
-"
-let g:gruvbox_material_background = 'hard'
-let g:gruvbox_material_foreground = 'material'
-let g:gruvbox_material_better_performance = 1
-colorscheme gruvbox-material
 
+" let g:gruvbox_material_background = 'hard'
+" let g:gruvbox_material_foreground = 'mix'
+" let g:gruvbox_material_better_performance = 1
+" let g:gruvbox_material_diagnostic_text_highlight = 1
+" let g:gruvbox_material_diagnostic_virtual_text = 'colored'
+" colorscheme gruvbox-material
+" hi Comment guifg =#A19487
+
+let g:everforest_background = 'hard'
+let g:everforest_better_performance = 1
+colorscheme everforest
 
