@@ -19,7 +19,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+    Plug 'nvim-tree/nvim-tree.lua'
     Plug 'nvim-telescope/telescope.nvim'
+    Plug 'simrat39/rust-tools.nvim'
+
     " main one
     Plug 'nvim-treesitter/nvim-treesitter-textobjects'
     Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
@@ -27,7 +30,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " 9000+ Snippets
     Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
     Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-    Plug 'kyazdani42/nvim-web-devicons' " lua
+    Plug 'nvim-tree/nvim-web-devicons'
     Plug 'ryanoasis/vim-devicons' " vimscript
 
     "Status bar
@@ -37,7 +40,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'NvChad/nvim-colorizer.lua'
     Plug 'tpope/vim-commentary'
 
-    " Plug 'shaunsingh/nord.nvim'
     Plug 'Mofiqul/vscode.nvim'
     Plug 'sainnhe/gruvbox-material'
     Plug 'sainnhe/everforest'

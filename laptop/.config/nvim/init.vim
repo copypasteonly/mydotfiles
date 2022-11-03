@@ -39,6 +39,7 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 nnoremap <leader>r <cmd>CHADopen<cr>
+
 let g:chadtree_settings = { "theme.text_colour_set" : "solarized_universal" }
 
 set background=dark
@@ -57,5 +58,8 @@ set background=dark
 
 let g:everforest_background = 'hard'
 let g:everforest_better_performance = 1
+let g:everforest_colors_override = {'bg0': ['#23292e', '234'], 'aqua': ['#55a869', '37'], 'red': ['#e2696b', '167'], 'green': ['#9eb971', '142'], 'yellow': ['#d6b36c', '214'], 'orange': ['#e2896a', '208']}
+let g:everforest_diagnostic_virtual_text = 'colored'
+
 colorscheme everforest
 
