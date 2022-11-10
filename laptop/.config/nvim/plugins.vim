@@ -49,4 +49,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'windwp/nvim-autopairs'
 
+    Plug 'ellisonleao/glow.nvim'
 call plug#end()
