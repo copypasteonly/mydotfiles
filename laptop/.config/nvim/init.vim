@@ -1,5 +1,6 @@
 set termguicolors
 source $HOME/.config/nvim/plugins.vim
+let g:coq_settings = { 'auto_start': v:true, 'keymap.jump_to_mark' : '<c-_>'}
 lua require 'init'
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 syntax enable
@@ -28,9 +29,13 @@ set smarttab
 set autoindent
 set showtabline=2
 set updatetime=200
+set completeopt=menu,menuone,noselect
 "highlight Normal guibg=NONE ctermbg=None
+
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
 nnoremap Y y$
-let g:coq_settings = { 'auto_start': 'shut-up', 'keymap.jump_to_mark' : '<c-_>'}
 
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
@@ -43,6 +48,7 @@ nnoremap <leader>r <cmd>CHADopen<cr>
 let g:chadtree_settings = { "theme.text_colour_set" : "solarized_universal" }
 
 set background=dark
+
 " colorscheme vscode
 " let g:vscode_transparency = 1
 " let g:vscode_italic_comment = 1
@@ -60,6 +66,5 @@ let g:everforest_background = 'hard'
 let g:everforest_better_performance = 1
 let g:everforest_colors_override = {'bg0': ['#23292e', '234'], 'aqua': ['#55a869', '37'], 'red': ['#e2696b', '167'], 'green': ['#9eb971', '142'], 'yellow': ['#d6b36c', '214'], 'orange': ['#e2896a', '208']}
 let g:everforest_diagnostic_virtual_text = 'colored'
-
 colorscheme everforest
 

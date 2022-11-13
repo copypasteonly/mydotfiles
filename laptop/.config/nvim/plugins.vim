@@ -8,9 +8,6 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " File Explorer
-    Plug 'scrooloose/NERDTree'
-
     " Discord presence
     Plug 'andweeb/presence.nvim'
 
@@ -26,20 +23,20 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " main one
     Plug 'nvim-treesitter/nvim-treesitter-textobjects'
     Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
-
-    " 9000+ Snippets
     Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+    Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
+
     Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
     Plug 'nvim-tree/nvim-web-devicons'
     Plug 'ryanoasis/vim-devicons' " vimscript
 
     "Status bar
     Plug 'nvim-lualine/lualine.nvim'
-
-    Plug 'p00f/nvim-ts-rainbow'
     Plug 'NvChad/nvim-colorizer.lua'
+
     Plug 'tpope/vim-commentary'
 
+    " Themes
     Plug 'Mofiqul/vscode.nvim'
     Plug 'sainnhe/gruvbox-material'
     Plug 'sainnhe/everforest'
@@ -48,6 +45,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mfussenegger/nvim-jdtls'
 
     Plug 'windwp/nvim-autopairs'
+    Plug 'yioneko/nvim-yati', { 'tag': '*' }
 
-    Plug 'ellisonleao/glow.nvim'
 call plug#end()
