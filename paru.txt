@@ -1,7 +1,0 @@
-auto-cpufreq
-leftwm
-leftwm-theme-git
-libvterm-0.1
-neovim-git
-paru
-zsh-theme-powerlevel10k-git
