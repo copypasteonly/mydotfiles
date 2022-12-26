@@ -49,6 +49,17 @@ local config = require('coq').lsp_ensure_capabilities({
   -- for a list of options
   settings = {
     java = {
+            project ={
+                referencedLibraries = {
+                    "/usr/lib/jvm/java-17-openjdk/lib/javafx.base.jar",
+                    "/usr/lib/jvm/java-17-openjdk/lib/javafx-swt.jar",
+                    "/usr/lib/jvm/java-17-openjdk/lib/javafx.swing.jar",
+                    "/usr/lib/jvm/java-17-openjdk/lib/javafx.graphics.jar",
+                    "/usr/lib/jvm/java-17-openjdk/lib/javafx.controls.jar",
+                    "/usr/lib/jvm/java-17-openjdk/lib/javafx.fxml.jar",
+                    "/usr/lib/jvm/java-17-openjdk/lib/javafx.media.jar",
+                },
+           },
     },
 },
 

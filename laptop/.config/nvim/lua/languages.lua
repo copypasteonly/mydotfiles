@@ -1,10 +1,7 @@
 local lsp_flags = {
     debounce_text_changes = 150,
 }
-vim.g.coq_settings = {
-    auto_start = 'shut-up',
-    keymap = { jump_to_mark = '<c-_>' },
-}
+
 require('lspconfig')['pyright'].setup(require('coq').lsp_ensure_capabilities({
     flags = lsp_flags,
 }))

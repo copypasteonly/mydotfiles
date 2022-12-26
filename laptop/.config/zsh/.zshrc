@@ -7,7 +7,6 @@ fi
 
 #!/bin/sh
 
-
 source $HOME/.zshenv
 
 PROMPT_EOL_MARK=''

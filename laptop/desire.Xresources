@@ -34,3 +34,5 @@
 ! white
 *.color7:       #dfdfaf
 *.color15:      #dfdfaf
+
+Xcursor.teme: phinger-cursors-light

@@ -13,6 +13,6 @@ require'nvim-treesitter.configs'.setup {
     default_lazy = true,
     default_fallback = "auto",
   },
-  indent = { enable = false, disable = { "" } }
+  indent = { enable = true, disable = { "" } }
 }
 

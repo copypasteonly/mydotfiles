@@ -1,1 +1,1 @@
-alias update-mirror="sudo reflector --verbose --country JP,SG,HK,Taiwan --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+alias update-mirror="sudo reflector --verbose --country JP,SG,HK,Taiwan --age 12 --protocol https --sort rate --download-timeout 15 --save /etc/pacman.d/mirrorlist"

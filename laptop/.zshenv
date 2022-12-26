@@ -6,3 +6,5 @@ export BROWSER="firefox"
 export PATH="$HOME/bin:$PATH"
 export PATH=$PATH:$HOME/.local/bin
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH=/opt/apache-maven-3.8.6/bin:$PATH
+export PATH_TO_FX="/usr/lib/jvm/java-17-openjdk/lib/javafx.base.jar:/usr/lib/jvm/java-17-openjdk/lib/javafx-swt.jar:/usr/lib/jvm/java-17-openjdk/lib/javafx.swing.jar:/usr/lib/jvm/java-17-openjdk/lib/javafx.graphics.jar:/usr/lib/jvm/java-17-openjdk/lib/javafx.controls.jar:/usr/lib/jvm/java-17-openjdk/lib/javafx.fxml.jar:/usr/lib/jvm/java-17-openjdk/lib/javafx.media.jar"
