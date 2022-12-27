@@ -1,0 +1,10 @@
+romkatv/powerlevel10k kind:fpath
+sindresorhus/pure       kind:fpath
+
+jeffreytse/zsh-vi-mode
+
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+zdharma-continuum/fast-syntax-highlighting      kind:defer
+
+
