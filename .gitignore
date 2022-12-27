@@ -1,6 +1,8 @@
 laptop/.config/nvim/autoload/plugged/*
 laptop/.config/zsh/plugins/*
+laptop/.config/zsh/.antidote/*
 laptop/.config/zsh/.zcompdump
-laptop/.config/zsh/.p10k.zsh
+laptop/.config/zsh/.zcompdump.zwc
+laptop/.config/zsh/.zsh_plugins.zsh
 laptop/.config/leftwm/themes/*
 laptop/.config/leftwm/themes.toml
