@@ -8,6 +8,7 @@ filetype plugin indent on
 
 autocmd FileType apache setlocal commentstring=#\ %s
 autocmd BufRead,BufNewFile *.ron set syntax=rust
+autocmd BufRead,BufNewFile *.conf set filetype=dosini
 autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 
 set cursorline
