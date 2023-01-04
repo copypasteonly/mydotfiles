@@ -24,6 +24,8 @@ antidote_dir=${ZDOTDIR:-~}/.antidote
 plugins_file=${ZDOTDIR:-~}/.zsh_plugins.txt
 static_file=${ZDOTDIR:-~}/.zsh_plugins.zsh
 
+ZLE_RPROMPT_INDENT=0
+
 source $HOME/.zshenv
 source ${ZDOTDIR:-~}/.zsh_plugins.zsh
 
@@ -39,7 +41,9 @@ if [[ ! ${ZDOTDIR:-~}/.zcompdump.zwc -nt ${ZDOTDIR:-~}/.zcompdump ]]; then
   zcompile -R -- ${ZDOTDIR:-~}/.zcompdump.zwc ${ZDOTDIR:-~}/.zcompdump
 fi
 
+setopt autocd extendedglob nomatch menucomplete
+
 xset r rate 210 40
 
-
-
+# To customize prompt, run `p10k configure` or edit ~/mydotfiles/laptop/.config/zsh/.p10k.zsh.
+[[ ! -f ~/mydotfiles/laptop/.config/zsh/.p10k.zsh ]] || source ~/mydotfiles/laptop/.config/zsh/.p10k.zsh
