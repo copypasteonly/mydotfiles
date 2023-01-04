@@ -22,7 +22,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " main one
     Plug 'nvim-treesitter/nvim-treesitter-textobjects'
-    Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+    Plug 'ms-jpq/coq_nvim', {'branch': 'coq', 'commit': '5eddd31bf8a98d1b893b0101047d0bb31ed20c49'}
     Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
     Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
 
