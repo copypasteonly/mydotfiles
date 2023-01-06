@@ -8,7 +8,7 @@ redshift &
 dunst &
 picom &
 solaar &
-brightnessctl set 5%
+brightnessctl set 3%
 
 exec dbus-launch leftwm
 
