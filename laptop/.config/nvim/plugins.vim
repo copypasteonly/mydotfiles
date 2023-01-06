@@ -45,6 +45,5 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mfussenegger/nvim-jdtls'
 
     Plug 'windwp/nvim-autopairs'
-    Plug 'yioneko/nvim-yati', { 'tag': '*' }
 
 call plug#end()
