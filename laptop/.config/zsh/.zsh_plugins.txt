@@ -2,6 +2,7 @@ romkatv/powerlevel10k kind:fpath
 sindresorhus/pure       kind:fpath
 
 jeffreytse/zsh-vi-mode
+hlissner/zsh-autopair
 
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
