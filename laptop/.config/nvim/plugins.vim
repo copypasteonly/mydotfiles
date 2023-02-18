@@ -1,7 +1,7 @@
 " auto-install vim-plug
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    \ https://raw.githubPlugrcontent.com/junegunn/vim-plug/master/plug.vim
   "autocmd VimEnter * PlugInstall
   "autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
@@ -21,10 +21,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'simrat39/rust-tools.nvim'
 
     " main one
-    Plug 'nvim-treesitter/nvim-treesitter-textobjects'
-    Plug 'ms-jpq/coq_nvim', {'branch': 'coq', 'commit': '5eddd31bf8a98d1b893b0101047d0bb31ed20c49'}
-    Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
-    Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
+    " Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+    " Plug 'ms-jpq/coq_nvim', {'branch': 'coq', 'commit': '5eddd31bf8a98d1b893b0101047d0bb31ed20c49'}
+    " Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+    " Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
+    "
+    Plug 'hrsh7th/cmp-nvim-lsp'
+    Plug 'hrsh7th/cmp-buffer'
+    Plug 'hrsh7th/cmp-path'
+    Plug 'hrsh7th/cmp-cmdline'
+    Plug 'hrsh7th/nvim-cmp'
+    Plug 'L3MON4D3/LuaSnip'
+    Plug 'saadparwaiz1/cmp_luasnip'
+    Plug 'rafamadriz/friendly-snippets'
 
     Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
     Plug 'nvim-tree/nvim-web-devicons'
@@ -43,7 +52,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Easier Java
     Plug 'mfussenegger/nvim-jdtls'
-
     Plug 'windwp/nvim-autopairs'
 
 call plug#end()
