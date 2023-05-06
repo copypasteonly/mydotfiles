@@ -28,6 +28,7 @@ ZLE_RPROMPT_INDENT=0
 
 source $HOME/.zshenv
 source ${ZDOTDIR:-~}/.zsh_plugins.zsh
+source ${ZDOTDIR:-~}/zsh-aliases
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
