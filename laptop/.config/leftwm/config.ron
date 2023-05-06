@@ -11,7 +11,8 @@
 (
     modkey: "Mod4",
     mousekey: "Mod4",
-    workspaces: [],
+    workspaces: [
+  ],
     tags: [
         "1",
         "2",
